@@ -1,69 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saksham Rohilla | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saksham Rohilla</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
-    header { padding: 40px; text-align: center; background: #1e293b; }
-    h1 { margin: 0; font-size: 2.5rem; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    .card { background: #1e293b; padding: 20px; margin-bottom: 20px; border-radius: 12px; }
-    a { color: #38bdf8; text-decoration: none; }
-    .skills span { display: inline-block; background: #334155; padding: 6px 10px; margin: 5px; border-radius: 8px; }
+    body { margin:0; font-family: Inter, sans-serif; background:#0f172a; color:#e2e8f0; }
+    nav { position:fixed; top:0; width:100%; background:#020617; padding:15px; text-align:center; }
+    nav a { margin:0 15px; color:#38bdf8; text-decoration:none; font-size:14px; }
+    header { padding:120px 20px 60px; text-align:center; }
+    h1 { font-size:3rem; margin:0; }
+    h2 { border-bottom:1px solid #334155; padding-bottom:5px; }
+    section { max-width:900px; margin:auto; padding:40px 20px; }
+    .card { background:#1e293b; padding:20px; border-radius:10px; margin-bottom:20px; }
+    .skills span { display:inline-block; background:#334155; padding:6px 10px; margin:5px; border-radius:6px; }
+    a { color:#38bdf8; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Saksham Rohilla</h1>
-    <p>Software Engineer | Backend | Distributed Systems</p>
-    <p>
-      <a href="#">LinkedIn</a> | 
-      <a href="#">GitHub</a> | 
-      <a href="mailto:rohillasaksham20@gmail.com">Email</a>
-    </p>
-  </header>
 
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>PayU</h3>
-      <p>Software Engineer (2025 - Present)</p>
-      <ul>
-        <li>Built scalable backend systems for high-volume APIs</li>
-        <li>Implemented workload distribution using round-robin algorithms</li>
-      </ul>
-    </div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#achievements">Achievements</a>
+</nav>
 
-    <div class="card">
-      <h3>Associate Software Engineer</h3>
-      <ul>
-        <li>Reduced processing time by 50%</li>
-        <li>Built workflow automation and event-driven systems</li>
-      </ul>
-    </div>
-  </section>
+<header>
+  <h1>Saksham Rohilla</h1>
+  <p>Software Engineer</p>
+  <p>
+    <a href="https://www.linkedin.com/in/saksham-r/">LinkedIn</a> |
+    <a href="https://github.com/naruto361">GitHub</a> |
+    <a href="mailto:rohillasaksham20@gmail.com">Email</a>
+  </p>
+</header>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Eklavya</h3>
-      <p>Online Examination Portal</p>
-    </div>
-  </section>
+<section id="about">
+  <h2>About</h2>
+  <p>Backend-focused Software Engineer with experience in building scalable systems, event-driven architectures, and high-volume APIs.</p>
+</section>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Java</span><span>Python</span><span>Kafka</span><span>AWS</span>
-      <span>MySQL</span><span>MongoDB</span><span>Node.js</span>
-    </div>
-  </section>
+<section id="experience">
+  <h2>Experience</h2>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: rohillasaksham20@gmail.com</p>
-  </section>
+  <div class="card">
+    <h3>PayU - Software Engineer</h3>
+    <p>April 2025 – Present</p>
+    <ul>
+      <li>Designed scalable backend services for high-volume API traffic</li>
+      <li>Built reusable round-robin allocation system for workload distribution</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>PayU - Associate Software Engineer</h3>
+    <p>July 2023 – March 2025</p>
+    <ul>
+      <li>Reduced turnaround time by 50% via merchant record automation</li>
+      <li>Built workflow approval systems eliminating manual email processes</li>
+      <li>Implemented event-driven systems for onboarding and risk checks</li>
+      <li>Worked on marketing automation pipelines</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>PayU - Engineering Intern</h3>
+    <p>Jan 2023 – July 2023</p>
+    <ul>
+      <li>Built system to track daily emails and storage</li>
+      <li>Improved UI experience by resolving issues</li>
+    </ul>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Eklavya</h3>
+    <p>Online Examination Portal</p>
+    <p>PHP, MySQL, HTML, CSS, JavaScript</p>
+    <a href="https://github.com/naruto361/Eklavya">GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Vaccine Booking System</h3>
+    <p>C++ based booking system with file storage</p>
+    <a href="https://github.com/naruto361/Vaccine-Booking">GitHub</a>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Java</span><span>JavaScript</span><span>Python</span><span>Node.js</span>
+    <span>AWS</span><span>Kafka</span><span>REST APIs</span><span>Datadog</span>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Institute Rank 3 @ GeeksForGeeks</li>
+    <li>CodeChef 3⭐ (1732)</li>
+    <li>LeetCode 1716</li>
+    <li>Rising Star Award @ PayU</li>
+  </ul>
+</section>
+
 </body>
 </html>
