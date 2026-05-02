@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saksham Rohilla</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -14,6 +15,8 @@
   --text: #e6edf3;
   --muted: #9ca3af;
 }
+
+html { scroll-behavior: smooth; }
 
 body {
   margin:0;
@@ -49,10 +52,23 @@ header {
   align-items:center;
   text-align:center;
   background: radial-gradient(circle at top, #1f2937, #0b0f19);
+  padding:20px;
 }
 
 h1 { font-size:3.5rem; margin:0; }
-.tag { color:var(--muted); margin-top:10px; }
+
+.tag {
+  color:var(--muted);
+  margin-top:10px;
+  font-size:1.1rem;
+}
+
+.intro {
+  max-width:650px;
+  margin-top:15px;
+  color:var(--muted);
+  line-height:1.6;
+}
 
 .links a {
   margin:0 10px;
@@ -148,7 +164,7 @@ footer {
 <body>
 
 <nav>
-<a href="#about">About</a>
+<a href="#profile">Profile</a>
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
@@ -157,7 +173,13 @@ footer {
 
 <header>
 <h1>Saksham Rohilla</h1>
-<p class="tag">Software Engineer</p>
+<p class="tag">Backend Engineer • Distributed Systems • Fintech</p>
+
+<p class="intro">
+Backend-focused Software Engineer building scalable APIs, event-driven systems, and automation pipelines.
+Reduced operational effort by 50% and saved $11K annually through system optimizations.
+</p>
+
 <div class="links">
 <a href="https://www.linkedin.com/in/saksham-r/">LinkedIn</a>
 <a href="https://github.com/naruto361">GitHub</a>
@@ -165,9 +187,12 @@ footer {
 </div>
 </header>
 
-<section id="about">
-<h2>About</h2>
-<p>Backend engineer building scalable systems, APIs, and distributed workflows.</p>
+<section id="profile">
+<h2>Profile</h2>
+<p>
+Backend engineer with experience in designing scalable systems, distributed workflows, and automation pipelines.
+Focused on performance optimization, cost efficiency, and building reliable backend architectures in fintech environments.
+</p>
 </section>
 
 <section id="experience">
@@ -177,19 +202,32 @@ footer {
 <div class="timeline-item card">
 <h3>PayU — Software Engineer</h3>
 <p>April 2025 – Present</p>
-<p>Built scalable backend services and workload distribution systems.</p>
+<ul>
+<li>Migrated large datasets to Redshift, saving $11K annually</li>
+<li>Built risk-based settlement system using sync + async pipelines</li>
+<li>Handled thousands of API requests/day with secure processing</li>
+<li>Automated task allocation, reducing manual effort by 50%</li>
+</ul>
 </div>
 
 <div class="timeline-item card">
 <h3>PayU — Associate Software Engineer</h3>
 <p>July 2023 – March 2025</p>
-<p>Reduced TAT by 50% and built workflow + event-driven systems.</p>
+<ul>
+<li>Reduced onboarding TAT by 75% via automation</li>
+<li>Built approval workflows replacing manual email processes</li>
+<li>Implemented event-driven + cron-based automation systems</li>
+<li>Improved customer engagement by 12%</li>
+</ul>
 </div>
 
 <div class="timeline-item card">
-<h3>PayU — Intern</h3>
+<h3>PayU — Engineering Intern</h3>
 <p>Jan 2023 – July 2023</p>
-<p>Improved UI and built internal tracking systems.</p>
+<ul>
+<li>Built monitoring tools for email usage and storage</li>
+<li>Improved UI/UX by resolving frontend issues</li>
+</ul>
 </div>
 
 </div>
@@ -201,14 +239,14 @@ footer {
 
 <div class="card">
 <h3>Eklavya</h3>
-<p>Online exam portal with admin dashboard</p>
+<p>Full-stack examination platform with dynamic test creation, automated evaluation, and role-based access control.</p>
 <a href="https://github.com/naruto361/Eklavya">View</a>
 </div>
 
 <div class="card">
-<h3>Vaccine Booking</h3>
-<p>C++ based booking system</p>
-<a href="https://github.com/naruto361/Vaccine-Booking">View</a>
+<h3>Real-time Risk Processing System</h3>
+<p>Kafka-based system for real-time transaction validation using async pipelines and rule-based risk engine.</p>
+<a href="#">View</a>
 </div>
 
 </div>
@@ -217,18 +255,25 @@ footer {
 <section id="skills">
 <h2>Skills</h2>
 <div class="skills">
-<span>Java</span><span>JavaScript</span><span>Python</span><span>Node.js</span>
-<span>AWS</span><span>Kafka</span><span>REST APIs</span><span>Datadog</span>
+<span>Java</span>
+<span>Python</span>
+<span>Node.js</span>
+<span>Kafka</span>
+<span>AWS</span>
+<span>REST APIs</span>
+<span>MySQL</span>
+<span>MongoDB</span>
+<span>Datadog</span>
 </div>
 </section>
 
 <section id="achievements">
 <h2>Achievements</h2>
 <ul>
+<li>Rising Star Award at PayU</li>
 <li>Institute Rank 3 @ GeeksForGeeks</li>
-<li>CodeChef 3⭐</li>
-<li>LeetCode 1716</li>
-<li>Rising Star Award @ PayU</li>
+<li>CodeChef 3★ (Max Rating: 1732)</li>
+<li>LeetCode Rating: 1716</li>
 </ul>
 </section>
 
