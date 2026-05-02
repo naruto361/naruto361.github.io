@@ -93,19 +93,13 @@ h2 {
   gap:20px;
 }
 
+/* ✅ FIXED CARD (NO ANIMATION BUG) */
 .card {
   background: linear-gradient(145deg, #111827, #1f2937);
   padding:20px;
   border-radius:14px;
   border:1px solid #1f2937;
   transition:0.3s;
-  opacity:0;
-  transform:translateY(40px);
-}
-
-.card.show {
-  opacity:1;
-  transform:translateY(0);
 }
 
 .card:hover {
@@ -191,7 +185,7 @@ Reduced operational effort by 50% and saved $11K annually through system optimiz
 <h2>Profile</h2>
 <p>
 Backend engineer with experience in designing scalable systems, distributed workflows, and automation pipelines.
-Focused on performance optimization, cost efficiency, and building reliable backend architectures in fintech environments.
+Focused on performance optimization, cost efficiency, and building reliable backend architectures.
 </p>
 </section>
 
@@ -280,16 +274,6 @@ Focused on performance optimization, cost efficiency, and building reliable back
 <footer>
 <p>© Saksham Rohilla</p>
 </footer>
-
-<script>
-const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) entry.target.classList.add('show');
-  });
-});
-cards.forEach(card => observer.observe(card));
-</script>
 
 </body>
 </html>
